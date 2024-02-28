@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="img/enviar.svg" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Enviar Correo</title>
+</head>
+<body>    
+    <div class="container">
+        <video id="video-background" autoplay loop muted>
+            <!-- Coloca la ruta de tu video aquí -->
+            <source src="imagenes/lluvia.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <div class="email-container">
+            <form id="email-form" method="post" action="index.php.php">
+                <label for="destinatario">Destinatario:</label><br/>
+                <input type="email" id="destinatario" name="destinatario" required /><br /><br />
+                <label for="asunto">Asunto:</label><br />
+                <input type="text" id="asunto" name="asunto" required /><br /><br />
+                <label for="mensaje">Mensaje:</label><br/>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br /><br />
+                <input type="submit" value="Enviar" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
